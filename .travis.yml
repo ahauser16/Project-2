@@ -1,4 +1,5 @@
 language: node_js
+<<<<<<< HEAD
 node_js: "12"
 branches:
   only:
@@ -6,3 +7,14 @@ branches:
 cache:
   directories:
     - node_modules
+=======
+node_js: "8"
+branches:
+  only:
+  - master
+cache:
+  directories:
+    - node_modules
+before_install:
+  - mysql -e 'CREATE DATABASE testdb;'
+>>>>>>> 50e872df2eb6e62825dfa92a75700c9afc8b35c6
