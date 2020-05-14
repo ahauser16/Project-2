@@ -9,7 +9,7 @@
           <input type="radio" name="options" id="authorCheckBox" data-searchName='author' autocomplete="off" checked> Author
         </label>
         <label class="btn btn-secondary">
-          <input type="radio" name="options" id="titleCheckBox" data-searchName='title' autocomplete="off"> Title
+          <input type="radio" name="options" id="nameCheckBox" data-searchName='name' autocomplete="off"> Name
         </label>
       </div>
       <button id='searchBtn' type="button" class='btn btn-primary'>Search</button>
@@ -24,7 +24,7 @@
     
     <div id='content'>
       <div>
-        <div id='userTitle' class='text-center'>
+        <div id='userName' class='text-center'>
           <h3 class='h3'>Welcome {{userName}}</h3>
         </div>
       </div>
@@ -42,7 +42,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="addProfileLabel">Add a profile</h5>
+                <h5 class="modal-name" id="addProfileLabel">Add a profile</h5>
                 <button type="button" class="close" data-dismiss="modal" data-target='addProfileModal' aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
