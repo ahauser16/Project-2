@@ -93,7 +93,7 @@ let setupAddProfileModal = () => {
         
         if(checked === 6){
             let newProfile = {
-                title: $('#profileNameInput').val().trim(),
+                name: $('#profileNameInput').val().trim(),
                 author: $('#authorNameInput').val().trim(),
                 image_URL: $('#profileImageInput').val().trim()
             }
@@ -128,8 +128,8 @@ let populateProfiles = (profiles) => {
         let newProfileImg = $('<img>').attr('src', profiles[a].image_URL).attr('class', 'rounded').attr('width', '200px').attr('height', '300px')
         $('#profile_' + a + ' .profileImgHolder').append(newProfileImg);
 
-        let newTitle = $('<h5>').attr('class', 'h5 text-center').text(profiles[a].title);
-        $('#profile_' + a).append(newTitle);
+        let newName = $('<h5>').attr('class', 'h5 text-center').text(profiles[a].name);
+        $('#profile_' + a).append(newName);
 
         let newAuthor = $('<h5>').attr('class', 'h5 text-center').text(profiles[a].author);
         $('#profile_' + a).append(newAuthor);
