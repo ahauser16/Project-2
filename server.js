@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+// num = 1
+=======
 require("dotenv").config();
 var express = require("express");
 var app = express();
@@ -65,3 +68,4 @@ app.listen(PORT, function() {
 // });
 
 module.exports = app;
+>>>>>>> 50e872df2eb6e62825dfa92a75700c9afc8b35c6

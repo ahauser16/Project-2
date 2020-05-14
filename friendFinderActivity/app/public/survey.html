@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Timbr - Love at first Sound</title>
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js' integrity='sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8='
+        crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <h1><strong>Collaborate Find Your Mate</strong></h1>
+            <hr>
+            <h3><strong>Tell Us About Yourself</strong></h3>
+            <br>
+            <h4>First Name (Required)</h4>
+            <input type="text" id="firstname" class="form-control" required>
+
+            <h4>Last Name (Required)</h4>
+            <input type="text" id="lastname" class="form-control" required>
+
+            <h4>Link to Photo Image (Required)</h4>
+            <input type="text" id="photo" class="form-control" required="">
+            <br>
+            
+            <hr>
+            
+            <h3><strong>Instructions:</strong></h3>
+            
+            <h4>What do you play?</h4>
+
+                <label id="instQ" for="select">Instrument(s)</label>
+                <select id="select">
+                  <option value="">Choose...</option>
+                  <optgroup id="instTypeb1" label="Brass">
+                    <option id="instTypeb2" value="Trumpet">Trumpet</option>
+                    <option id="instTypeb3" value="Cornet">Cornet</option>
+                    <option id="instTypeb4" value="Trombone">Trombone</option>
+                    <option id="instTypeb5" value="Baritone horn">Baritone horn</option>
+                    <option id="instTypeb6" value="French Horn">French Horn</option>
+                    <option id="instTypeb7" value="Saxaphone">Saxaphone</option>
+                    <option id="instTypeb8" value="Sousaphone">Sousaphone</option>
+                    <option id="instTypeb9" value="Tuba">Tuba</option>
+                    <option id="instTypeb10" value="Wagner tuba">Wagner tuba</option>
+                  </optgroup>
+
+                  <optgroup id="instTypep1" label="Percussion">
+                    <option id="instTypep2" value="Triangle">Triangle</option>
+                    <option id="instTypep3" value="Timpani">Timpani</option>
+                    <option id="instTypep4" value="Xylophone">Xylophone</option>
+                    <option id="instTypep5" value="Vibraphone">Vibraphone</option>
+                    <option id="instTypep6" value="Marimba">Marimba</option>
+                    <option id="instTypep7" value="Tubular bells">Tubular bells</option>
+                    <option id="instTypep8" value="Glockenspiel">Glockenspiel</option>
+                    <option id="instTypep9" value="Celesta">Celesta</option>
+                    <option id="instTypep10" value="Bass drum">Bass drum</option>
+                    <option id="instTypep11" value="Snare drum">Snare drum</option>
+                    <option id="instTypep12" value="Wood block">Wood block</option>
+                    <option id="instTypep13" value="Whip">Whip</option>
+                    <option id="instTypep14" value="Ratchet">Ratchet</option>
+                    <option id="instTypep15" value="Cymbals">Cymbals</option>
+                    <option id="instTypep16" value="Tambourine">Tambourine</option>
+                  </optgroup>
+
+                  <optgroup id="instTypes1" label="Strings">
+                    <option id="instTypes2" value="violin">violin</option>
+                    <option id="instTypes3" value="viola">viola</option>
+                    <option id="instTypes4" value="cello">cello</option>
+                    <option id="instTypes5" value="bass">bass</option>
+                    <option id="instTypes6" value="harp">harp</option>
+                    <option id="instTypes7" value="guitar">guitar</option>
+                    <option id="instTypes8" value="viol de gamba">viol de gamba</option>
+                    <option id="instTypes9" value="viol d'amore">viol d'amore</option>
+                    <option id="instTypes10" value="theorbo">theorbo</option>
+                  </optgroup>
+
+                  <optgroup id="instTypew1" label="Woodwinds">
+                    <option id="instTypew2" value="Piccolo">Piccolo</option>
+                    <option id="instTypew3" value="Flute">Flute</option>
+                    <option id="instTypew4" value="Clarinet">Clarinet</option>
+                    <option id="instTypew5" value="English Horn">English Horn</option>
+                    <option id="instTypew6" value="Oboe">Oboe</option>
+                    <option id="instTypew7" value="Bass clarinet">Bass clarinet</option>
+                    <option id="instTypew8" value="Bassoon">Bassoon</option>
+                    <option id="instTypew9" value="Contrabassoon">Contrabassoon</option>
+                    <option id="instTypew10" value="Bagpipe">Bagpipe</option>
+                    <option id="instTypew11" value="Harmonica">Harmonica</option>
+                  </optgroup>
+
+                  <optgroup id="instTypek1" label="Keyboard">
+                    <option id="instTypek2" value="Piano">Piano</option>
+                    <option id="instTypek3" value="Harpsichord">Harpsichord</option>
+                    <option id="instTypek4" value="Clavichord">Clavichord</option>
+                    <option id="instTypek5" value="Accordion">Accordion</option>
+                    <option id="instTypek6" value="Celesta">Oboe</option>
+                    <option id="instTypek7" value="Harmonium">Bass clarinet</option>
+                    <option id="instTypek8" value="Organ">Bassoon</option>
+                  </optgroup>
+
+                  <optgroup id="instTypev1" label="Voice">
+                    <option id="instTypev2" value="Soprano">Piano</option>
+                    <option id="instTypev3" value="Mezzo Soprano">Harpsichord</option>
+                    <option id="instTypev4" value="Contralto">Clavichord</option>
+                    <option id="instTypev5" value="Countertenor">Accordion</option>
+                    <option id="instTypev6" value="Tenor">Oboe</option>
+                    <option id="instTypev7" value="Baritone ">Bass clarinet</option>
+                    <option id="instTypev8" value="Bass">Bassoon</option>
+                  </optgroup>
+                </select>
+
+            <hr>
+
+            <h4>What do you like to listen to?</h4>
+            
+            <br>
+
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm">
+                    <p><label><input id="like1" type="checkbox" value="" />  Hip-Hop</label></p>
+                    <p><label><input id="like2" type="checkbox" value="" />  Pop</label></p>
+                    <p><label><input id="like3" type="checkbox" value="" />  Country</label></p>
+                    <p><label><input id="like4" type="checkbox" value="" />  R&B</label></p>
+                    <p><label><input id="like5" type="checkbox" value="" />  Latin</label></p>
+                  </div>
+                  <div class="col-sm">
+                    <p><label><input id="like6" type="checkbox" value="" />  Rock</label></p>
+                    <p><label><input id="like7" type="checkbox" value="" />  Dance/Electronic</label></p>
+                    <p><label><input id="like8" type="checkbox" value="" />  Indie</label></p>
+                    <p><label><input id="like9" type="checkbox" value="" />  Folk & Acoustic</label></p>
+                    <p><label><input id="like10" type="checkbox" value="" />  Classical</label></p>
+                  </div>
+                  <div class="col-sm">
+                    <p><label><input id="like11" type="checkbox" value="" />  Christian</label></p>
+                    <p><label><input id="like12" type="checkbox" value="" />  K-Pop</label></p>
+                    <p><label><input id="like13" type="checkbox" value="" />  Arab</label></p>
+                    <p><label><input id="like14" type="checkbox" value="" />  Desi</label></p>
+                    <p><label><input id="like15" type="checkbox" value="" />  Afro</label></p>
+                  </div>
+                  <div class="col-sm">
+                    <p><label><input id="like16" type="checkbox" value="" />  Regional Mexican</label></p>
+                    <p><label><input id="like17" type="checkbox" value="" />  Reggae</label></p>
+                    <p><label><input id="like18" type="checkbox" value="" />  Blues</label></p>
+                    <p><label><input id="like19" type="checkbox" value="" />  Punk</label></p>
+                    <p><label><input id="like20" type="checkbox" value="" />  Funk</label></p>
+                  </div>
+                </div>
+              </div>
+
+              <hr>
+
+              <h4>What don't you like to listen to?</h4>
+            
+              <hr>
+  
+              <div class="container">
+                  <div class="row">
+                    <div class="col-sm">
+                      <p><label><input id="dislike21" type="checkbox" value="" />  Hip-Hop</label></p>
+                      <p><label><input id="dislike22" type="checkbox" value="" />  Pop</label></p>
+                      <p><label><input id="dislike23" type="checkbox" value="" />  Country</label></p>
+                      <p><label><input id="dislike24" type="checkbox" value="" />  R&B</label></p>
+                      <p><label><input id="dislike25" type="checkbox" value="" />  Latin</label></p>
+                    </div>
+                    <div class="col-sm">
+                      <p><label><input id="dislike26" type="checkbox" value="" />  Rock</label></p>
+                      <p><label><input id="dislike27" type="checkbox" value="" />  Dance/Electronic</label></p>
+                      <p><label><input id="dislike28" type="checkbox" value="" />  Indie</label></p>
+                      <p><label><input id="dislike29" type="checkbox" value="" />  Folk & Acoustic</label></p>
+                      <p><label><input id="dislike30" type="checkbox" value="" />  Classical</label></p>
+                    </div>
+                    <div class="col-sm">
+                      <p><label><input id="dislike31" type="checkbox" value="" />  Christian</label></p>
+                      <p><label><input id="dislike32" type="checkbox" value="" />  K-Pop</label></p>
+                      <p><label><input id="dislike33" type="checkbox" value="" />  Arab</label></p>
+                      <p><label><input id="dislike34" type="checkbox" value="" />  Desi</label></p>
+                      <p><label><input id="dislike35" type="checkbox" value="" />  Afro</label></p>
+                    </div>
+                    <div class="col-sm">
+                      <p><label><input id="dislike36" type="checkbox" value="" />  Regional Mexican</label></p>
+                      <p><label><input id="dislike37" type="checkbox" value="" />  Reggae</label></p>
+                      <p><label><input id="dislike38" type="checkbox" value="" />  Blues</label></p>
+                      <p><label><input id="dislike39" type="checkbox" value="" />  Punk</label></p>
+                      <p><label><input id="dislike40" type="checkbox" value="" />  Funk</label></p>
+                    </div>
+                  </div>
+                </div>
+
+            <hr>
+
+            <h4>Is it important for your significant other to share your taste?</h4>
+            
+            <br>
+
+            <!-- ==================================================================
+            I BROKE THE SUBMIT BUTTON WAHHHHHHHHH -->
+            <!-- <div class="container">
+            <label id="taste" for="select">Instrument(s)</label>
+                <select id="select">
+                  <option value="">Choose...</option>
+                    <option id="taste1" value="0"> Not at all</option>
+                    <option id="taste2" value="1"> A little important</option>
+                    <option id="taste3" value="10"> Somewhat important</option>
+                    <option id="taste4" value="50"> Very Important</option>
+                    <option id="taste5" value="250"> Mandatory</option>
+            </div>
+                  <br> -->
+            <!-- ==================================================================
+
+
+  
+
+            <!-- ===================original survey questions below========= -->
+            <!-- <h4>Rate how much or how little you agree with the following statements using the dropdown scale! Be
+                careful! You could end up spending eternity with Derek!</h4>
+
+            <hr>
+            <h4><strong>Statement 1</strong></h4>
+            <h4>I am omnipotent and all knowing.</h4>
+            <select class="chosen-select" id="q1" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <h4><strong>Statement 2</strong>
+                </h3</h4> <h4>There is an afterlife, and my actions on earth affect my placement within it.</h4>
+            <select class="chosen-select" id="q2" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <h4><strong>Statement 3</strong>
+                </h3</h4> <h4>Wind chimes are the wave of the future!</h4>
+            <select class="chosen-select" id="q3" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <h4><strong>Statement 4</strong>
+            </h4>
+            <h4>Frozen yogurt is great!</h4>
+            <select class="chosen-select" id="q4" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <h4><strong>Statement 5</strong>
+            </h4>
+            <h4>When you're anxious, stomache aches are a fact of life.</h4>
+            <select class="chosen-select" id="q5" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <h4><strong>Statement 6</strong>
+            </h4>
+            <h4>I can not tell a lie.</h4>
+            <select class="chosen-select" id="q6" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <h4><strong>Statement 7</strong>
+            </h4>
+            <h4>Who let the dogs out is a work of art!</h4>
+            <select class="chosen-select" id="q7" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <h4><strong>Statement 8</strong>
+            </h4>
+            <h4>The fourth Hemsworth brother is my favourite.</h4>
+            <select class="chosen-select" id="q8" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <h4><strong>Statement 9</strong>
+            </h4>
+            <h4>If clam chowder is the only food option, you're probably not in the Good Place.</h4>
+            <select class="chosen-select" id="q9" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <br>
+            <br>
+            <h4><strong>Statement 10</strong>
+            </h4>
+            <h4>A molotov cocktail will solve your problems 100% of the time.</h4>
+            <select class="chosen-select" id="q10" required>
+                <option value="">Select Option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+            <hr> -->
+<!-- ===================original survey questions above========= -->
+
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-warning btn-lg " id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+                Submit</button>
+        </form>
+        <hr>
+
+        <footer>
+            <div class="container">
+                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub
+                        Repo</a></p>
+            </div>
+        </footer>
+    </div>
+    <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Bootstrap Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h2 class="modal-title"><strong>Best Match</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img" style="max-width:500px;max-height:500px;" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg"
+                        alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/kat3ng/friend_finder">GitHub
+                        Repo</a></p>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="survey.js"></script>
+</body>
+
+</html>
